@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<!--
+  GitHub Pages asset landing template (getdata.finance style)
+
+  Expected placeholders:
+  intc-3d-ohlcv-stocks-historical-data, INTC, 3d, 3D, US stocks,
+  us stocks, INTC, US equity cash and extended sessions — institutional-style OHLCV candles for US stocks.,
+  20, 2026-07-06, 2026-07-31,
+  1,784, 2010-03-29, 2026-07-30,
+  0.30 MB, 3d, INTC_3d.csv,
+  2026-08-05 UTC, [{"time":"2023-11-25","open":43.55,"high":44.49,"low":43.55,"close":44.03,"volume":3707},{"time":"2023-11-28","open":43.63,"high":45.28,"low":43.61,"close":44.67,"volume":16034},{"time":"2023-12-01","open":44.17,"high":44.29,"low":42.81,"close":43.68,"volume":9024},{"time":"2023-12-04","open":43.24,"high":43.24,"low":41.12,"close":41.23,"volume":21106},{"time":"2023-12-07","open":41.69,"high":42.9,"low":41.13,"close":42.66,"volume":10450},{"time":"2023-12-10","open":43.1,"high":44.67,"low":43.03,"close":44,"volume":12003},{"time":"2023-12-13","open":44,"high":47.21,"low":43.28,"close":46.07,"volume":29736},{"time":"2023-12-16","open":46.1,"high":46.17,"low":45.35,"close":45.64,"volume":5458},{"time":"2023-12-19","open":45.5,"high":47.06,"low":45.45,"close":47,"volume":19493},{"time":"2023-12-22","open":47.16,"high":48.1,"low":47.15,"close":47.97,"volume":6587},{"time":"2023-12-25","open":48.85,"high":51.22,"low":48.66,"close":50.73,"volume":15954},{"time":"2023-12-28","open":50.72,"high":50.82,"low":49.72,"close":50.2,"volume":10485},{"time":"2023-12-31","open":49.2,"high":49.32,"low":47.4,"close":47.77,"volume":9525},{"time":"2024-01-03","open":47.05,"high":47.77,"low":45.18,"close":46.82,"volume":32353},{"time":"2024-01-06","open":46.99,"high":48.7,"low":46.91,"close":48.38,"volume":7452},{"time":"2024-01-09","open":47.99,"high":48.5,"low":46.67,"close":47.58,"volume":24348},{"time":"2024-01-12","open":47.43,"high":47.54,"low":46.56,"close":47.04,"volume":9281},{"time":"2024-01-15","open":46.96,"high":47.17,"low":45.6,"close":46,"volume":16994},{"time":"2024-01-18","open":47,"high":48.7,"low":46.12,"close":48.1,"volume":19748},{"time":"2024-01-21","open":48.8,"high":49.11,"low":47.27,"close":48.83,"volume":17698},{"time":"2024-01-24","open":49.08,"high":50.24,"low":43.3,"close":43.58,"volume":35371},{"time":"2024-01-27","open":43.65,"high":43.93,"low":42.76,"close":43.78,"volume":4533},{"time":"2024-01-30","open":43.56,"high":43.77,"low":42.3,"close":43.32,"volume":25906},{"time":"2024-02-02","open":42.95,"high":43.05,"low":41.55,"close":42.52,"volume":10033},{"time":"2024-02-05","open":42.56,"high":43.09,"low":42.09,"close":42.73,"volume":19675},{"time":"2024-02-08","open":42.65,"high":43.46,"low":42.28,"close":43.25,"volume":10115},{"time":"2024-02-11","open":43.33,"high":44.98,"low":42.71,"close":43.12,"volume":15556},{"time":"2024-02-14","open":43.81,"high":45.22,"low":43.07,"close":43.46,"volume":19927},{"time":"2024-02-20","open":44.18,"high":45.11,"low":42.48,"close":42.9,"volume":34489},{"time":"2024-02-23","open":43.07,"high":43.45,"low":42.61,"close":42.92,"volume":5037},{"time":"2024-02-26","open":43.44,"high":43.62,"low":41.85,"close":41.95,"volume":12580},{"time":"2024-02-29","open":42.31,"high":44.21,"low":42.3,"close":43.77,"volume":11287},{"time":"2024-03-03","open":44.24,"high":46.56,"low":42.64,"close":43.11,"volume":19897},{"time":"2024-03-06","open":43.86,"high":46.57,"low":43.5,"close":43.95,"volume":32229},{"time":"2024-03-09","open":43.83,"high":44.87,"low":43.62,"close":44.81,"volume":9561},{"time":"2024-03-12","open":44.95,"high":45.21,"low":42.46,"close":42.72,"volume":20091},{"time":"2024-03-15","open":42.39,"high":43.09,"low":42.3,"close":42.62,"volume":7207},{"time":"2024-03-18","open":43.02,"high":43.32,"low":41.36,"close":42.13,"volume":24202},{"time":"2024-03-21","open":42.9,"high":43.55,"low":42.04,"close":42.5,"volume":11858},{"time":"2024-03-24","open":40.83,"high":42.21,"low":40.52,"close":41.94,"volume":12103},{"time":"2024-03-27","open":42.46,"high":44.54,"low":42.45,"close":44.1,"volume":12673},{"time":"2024-03-30","open":44.27,"high":45.35,"low":44.13,"close":44.45,"volume":5608},{"time":"2024-04-02","open":43.89,"high":44.02,"low":39.64,"close":39.67,"volume":22725},{"time":"2024-04-05","open":39.27,"high":39.4,"low":38.46,"close":38.61,"volume":8601},{"time":"2024-04-08","open":38.54,"high":38.81,"low":36.97,"close":37.15,"volume":22468},{"time":"2024-04-11","open":37.35,"high":37.61,"low":35.55,"close":35.63,"volume":8516},{"time":"2024-04-14","open":35.99,"high":36.64,"low":35.71,"close":36.17,"volume":13497},{"time":"2024-04-17","open":36.01,"high":36.07,"low":34.13,"close":34.14,"volume":18648},{"time":"2024-04-20","open":34.36,"high":34.5,"low":34.02,"close":34.35,"volume":4217},{"time":"2024-04-23","open":34.24,"high":35.23,"low":34.13,"close":35.09,"volume":15411},{"time":"2024-04-26","open":31.67,"high":32.18,"low":30.59,"close":31.82,"volume":9057},{"time":"2024-04-29","open":31.81,"high":31.85,"low":29.98,"close":30.3,"volume":14839},{"time":"2024-05-02","open":30.54,"high":31,"low":30.14,"close":30.84,"volume":5459},{"time":"2024-05-05","open":31.05,"high":31.39,"low":30.56,"close":30.61,"volume":2743},{"time":"2024-05-08","open":29.94,"high":30.4,"low":29.68,"close":29.79,"volume":4675},{"time":"2024-05-11","open":29.95,"high":31.07,"low":29.95,"close":30.44,"volume":2515},{"time":"2024-05-14","open":30.6,"high":32.2,"low":30.56,"close":31.99,"volume":5603},{"time":"2024-05-17","open":31.97,"high":32.05,"low":31.54,"close":31.79,"volume":1886},{"time":"2024-05-20","open":31.78,"high":32.37,"low":31.04,"close":31.38,"volume":5730},{"time":"2024-05-23","open":31.36,"high":31.51,"low":29.82,"close":30.66,"volume":6263},{"time":"2024-05-26","open":30.88,"high":31.31,"low":30.6,"close":31.03,"volume":2621},{"time":"2024-05-29","open":30.4,"high":30.9,"low":29.9,"close":30.83,"volume":7894},{"time":"2024-06-01","open":30.96,"high":31.01,"low":30,"close":30.25,"volume":3279},{"time":"2024-06-04","open":30.61,"high":30.78,"low":29.89,"close":30.36,"volume":9305},{"time":"2024-06-07","open":30.21,"high":30.72,"low":30.15,"close":30.72,"volume":2884},{"time":"2024-06-10","open":30.5,"high":31.41,"low":30.23,"close":30.71,"volume":8733},{"time":"2024-06-13","open":30.34,"high":30.52,"low":30.09,"close":30.4,"volume":4653},{"time":"2024-06-16","open":30.28,"high":31.41,"low":30.12,"close":30.57,"volume":3949},{"time":"2024-06-19","open":30.51,"high":31.3,"low":30.4,"close":31.05,"volume":5505},{"time":"2024-06-22","open":31.07,"high":31.37,"low":30.5,"close":30.53,"volume":2833},{"time":"2024-06-25","open":30.62,"high":30.77,"low":30.22,"close":30.55,"volume":5418},{"time":"2024-06-28","open":30.68,"high":31.25,"low":30.67,"close":30.88,"volume":2388},{"time":"2024-07-01","open":30.88,"high":31.28,"low":30.53,"close":31.15,"volume":5082},{"time":"2024-07-04","open":31.35,"high":32.28,"low":31.26,"close":31.93,"volume":3251},{"time":"2024-07-07","open":32.98,"high":35.16,"low":32.76,"close":34.54,"volume":13952},{"time":"2024-07-10","open":34.38,"high":35.42,"low":33.26,"close":34.44,"volume":15300},{"time":"2024-07-13","open":34.68,"high":35.17,"low":34.26,"close":34.41,"volume":4409},{"time":"2024-07-16","open":34.32,"high":37.09,"low":33.78,"close":34.83,"volume":30928},{"time":"2024-07-19","open":34.5,"high":34.5,"low":32.8,"close":32.95,"volume":6969},{"time":"2024-07-22","open":33.22,"high":33.35,"low":31.61,"close":31.63,"volume":15299},{"time":"2024-07-25","open":31.35,"high":31.93,"low":30.9,"close":31.32,"volume":13294},{"time":"2024-07-28","open":31.37,"high":31.41,"low":29.95,"close":30.07,"volume":6638},{"time":"2024-07-31","open":30.4,"high":30.81,"low":20.37,"close":21.43,"volume":24809},{"time":"2024-08-03","open":20.15,"high":20.33,"low":19.24,"close":20.06,"volume":10404},{"time":"2024-08-06","open":20.27,"high":20.56,"low":18.79,"close":20.45,"volume":13052},{"time":"2024-08-09","open":20.03,"high":20.07,"low":19.44,"close":19.65,"volume":3319},{"time":"2024-08-12","open":19.81,"high":20.44,"low":19.18,"close":19.86,"volume":7080},{"time":"2024-08-15","open":20.27,"high":21,"low":20.18,"close":20.82,"volume":5195},{"time":"2024-08-18","open":20.82,"high":21.57,"low":20.77,"close":20.94,"volume":5098},{"time":"2024-08-21","open":21.05,"high":21.38,"low":19.99,"close":20.47,"volume":7189},{"time":"2024-08-24","open":20.46,"high":20.48,"low":19.9,"close":20.09,"volume":1949},{"time":"2024-08-27","open":20.07,"high":20.54,"low":19.46,"close":20.08,"volume":6240},{"time":"2024-08-30","open":21.18,"high":22.06,"low":20.95,"close":21.99,"volume":6584},{"time":"2024-09-02","open":21.48,"high":21.63,"low":19.23,"close":19.36,"volume":7460},{"time":"2024-09-05","open":19.27,"high":19.84,"low":18.59,"close":18.84,"volume":4924},{"time":"2024-09-08","open":18.93,"high":19.48,"low":18.46,"close":18.92,"volume":3530},{"time":"2024-09-11","open":18.92,"high":19.74,"low":18.47,"close":19.6,"volume":7426},{"time":"2024-09-14","open":19.95,"high":21.01,"low":19.7,"close":20.87,"volume":4107},{"time":"2024-09-17","open":21.63,"high":22.52,"low":20.66,"close":21.09,"volume":20461},{"time":"2024-09-20","open":20.83,"high":23.06,"low":20.3,"close":21.8,"volume":14807},{"time":"2024-09-23","open":22.36,"high":24,"low":21.98,"close":23.51,"volume":16851},{"time":"2024-09-26","open":24.23,"high":24.6,"low":23.2,"close":23.84,"volume":10184},{"time":"2024-09-29","open":23.66,"high":23.89,"low":22.2,"close":22.62,"volume":7881},{"time":"2024-10-02","open":22.62,"high":23.01,"low":21.59,"close":22.53,"volume":9600},{"time":"2024-10-05","open":22.33,"high":22.59,"low":21.97,"close":22.34,"volume":2413},{"time":"2024-10-08","open":22.16,"high":23.47,"low":21.99,"close":23.17,"volume":6806},{"time":"2024-10-11","open":22.97,"high":23.76,"low":22.93,"close":23.51,"volume":2074},{"time":"2024-10-14","open":23.5,"high":23.71,"low":21.69,"close":22.26,"volume":8803},{"time":"2024-10-17","open":22.66,"high":22.76,"low":22.35,"close":22.72,"volume":3873},{"time":"2024-10-20","open":22.54,"high":22.82,"low":22.12,"close":22.34,"volume":3311},{"time":"2024-10-23","open":22.21,"high":23.28,"low":21.52,"close":22.62,"volume":6616},{"time":"2024-10-26","open":22.61,"high":23.21,"low":22.5,"close":22.88,"volume":2508},{"time":"2024-10-29","open":22.81,"high":23.08,"low":21.42,"close":21.48,"volume":8913},{"time":"2024-11-01","open":22.91,"high":23.51,"low":21.86,"close":23.15,"volume":13050},{"time":"2024-11-04","open":22.88,"high":25.06,"low":22.08,"close":25,"volume":17945},{"time":"2024-11-07","open":25.36,"high":26.37,"low":25.14,"close":26.16,"volume":10689},{"time":"2024-11-10","open":25.91,"high":26.23,"low":23.84,"close":24.12,"volume":9555},{"time":"2024-11-13","open":24,"high":25.55,"low":24,"close":24.29,"volume":11171},{"time":"2024-11-16","open":24.27,"high":24.96,"low":24.11,"close":24.8,"volume":3628},{"time":"2024-11-19","open":24.41,"high":24.71,"low":23.5,"close":24.4,"volume":13292},{"time":"2024-11-22","open":24.25,"high":24.63,"low":24.09,"close":24.45,"volume":3206},{"time":"2024-11-25","open":24.98,"high":25.51,"low":23.01,"close":23.59,"volume":10490},{"time":"2024-11-28","open":23.67,"high":24.22,"low":23.55,"close":23.99,"volume":1648},{"time":"2024-12-01","open":24.77,"high":25.42,"low":22.39,"close":22.42,"volume":11118},{"time":"2024-12-04","open":22.47,"high":22.48,"low":20.61,"close":20.85,"volume":8904},{"time":"2024-12-07","open":20.87,"high":21,"low":20.68,"close":20.76,"volume":2238},{"time":"2024-12-10","open":20.77,"high":20.84,"low":19.82,"close":20.73,"volume":6946},{"time":"2024-12-13","open":20.52,"high":20.74,"low":20.2,"close":20.28,"volume":2362},{"time":"2024-12-16","open":20.11,"high":21.04,"low":19.16,"close":19.25,"volume":10413},{"time":"2024-12-19","open":19.46,"high":19.7,"low":18.86,"close":19.47,"volume":7935},{"time":"2024-12-22","open":19.53,"high":20.34,"low":19.47,"close":20.32,"volume":5483},{"time":"2024-12-25","open":20.15,"high":20.6,"low":20.03,"close":20.26,"volume":4902},{"time":"2024-12-28","open":19.95,"high":20.06,"low":19.68,"close":19.75,"volume":2626},{"time":"2024-12-31","open":19.93,"high":20.37,"low":19.83,"close":20.16,"volume":6377},{"time":"2025-01-03","open":20.28,"high":20.61,"low":20.01,"close":20.5,"volume":1928},{"time":"2025-01-06","open":20.77,"high":20.92,"low":19.66,"close":19.83,"volume":9064},{"time":"2025-01-09","open":19.54,"high":19.54,"low":18.86,"close":19.08,"volume":2514},{"time":"2025-01-12","open":18.83,"high":19.46,"low":18.67,"close":19.16,"volume":4083},{"time":"2025-01-15","open":19.35,"high":21.54,"low":19.12,"close":21.43,"volume":10492},{"time":"2025-01-21","open":21.95,"high":22.35,"low":21.3,"close":21.51,"volume":7832},{"time":"2025-01-24","open":21.33,"high":21.33,"low":20.7,"close":20.77,"volume":1737},{"time":"2025-01-27","open":20.78,"high":21,"low":19.61,"close":19.71,"volume":9618},{"time":"2025-01-30","open":19.67,"high":20.27,"low":19.33,"close":19.37,"volume":8415},{"time":"2025-02-02","open":18.92,"high":19.69,"low":18.73,"close":19.25,"volume":5393},{"time":"2025-02-05","open":19.14,"high":19.71,"low":18.86,"close":19.05,"volume":5273},{"time":"2025-02-08","open":19.19,"high":20.02,"low":19.19,"close":19.7,"volume":1537},{"time":"2025-02-11","open":19.83,"high":24.77,"low":19.81,"close":24.06,"volume":25597},{"time":"2025-02-14","open":24.29,"high":25.13,"low":22.81,"close":23.55,"volume":16670},{"time":"2025-02-17","open":24.55,"high":27.49,"low":24.44,"close":25.66,"volume":28510},{"time":"2025-02-20","open":25.5,"high":26.23,"low":24.43,"close":24.8,"volume":16762},{"time":"2025-02-23","open":24.52,"high":24.74,"low":22.72,"close":22.95,"volume":18384},{"time":"2025-02-26","open":23.18,"high":24.38,"low":22.59,"close":23.68,"volume":28699},{"time":"2025-03-01","open":24.94,"high":24.99,"low":22.47,"close":22.71,"volume":20667},{"time":"2025-03-04","open":22.48,"high":22.52,"low":19.95,"close":20.7,"volume":34723},{"time":"2025-03-07","open":20.2,"high":21.14,"low":20.06,"close":20.58,"volume":8575},{"time":"2025-03-10","open":20.19,"high":21.11,"low":19.24,"close":20.63,"volume":21367},{"time":"2025-03-13","open":23.44,"high":24.47,"low":23.07,"close":23.98,"volume":25275},{"time":"2025-03-16","open":24.36,"high":26.35,"low":24.32,"close":25.88,"volume":20508},{"time":"2025-03-19","open":24.81,"high":25.17,"low":23.43,"close":24.2,"volume":17434},{"time":"2025-03-22","open":24.66,"high":24.93,"low":24.08,"close":24.14,"volume":3200},{"time":"2025-03-25","open":24.1,"high":24.69,"low":22.8,"close":23.57,"volume":9481},{"time":"2025-03-28","open":23.27,"high":23.52,"low":22.51,"close":22.66,"volume":2963},{"time":"2025-03-31","open":22.3,"high":22.69,"low":21.6,"close":21.91,"volume":13964},{"time":"2025-04-03","open":21.33,"high":23.83,"low":19.65,"close":19.81,"volume":36237},{"time":"2025-04-06","open":19.07,"high":20.61,"low":17.61,"close":18.1,"volume":44786},{"time":"2025-04-09","open":17.96,"high":21.67,"low":17.92,"close":19.68,"volume":56422},{"time":"2025-04-12","open":20.53,"high":20.99,"low":19.93,"close":20.26,"volume":9450},{"time":"2025-04-15","open":20.15,"high":20.41,"low":18.53,"close":18.87,"volume":12643},{"time":"2025-04-21","open":18.85,"high":20.97,"low":18.2,"close":20.51,"volume":12901},{"time":"2025-04-24","open":20.97,"high":21.49,"low":19.29,"close":19.99,"volume":7243},{"time":"2025-04-27","open":20.06,"high":21.02,"low":20,"close":20.28,"volume":7573},{"time":"2025-04-30","open":19.6,"high":20.72,"low":19.5,"close":20.54,"volume":8664},{"time":"2025-05-03","open":20.31,"high":20.52,"low":20.18,"close":20.21,"volume":1364},{"time":"2025-05-06","open":19.86,"high":21.18,"low":19.71,"close":20.95,"volume":6637},{"time":"2025-05-09","open":21.15,"high":21.39,"low":20.78,"close":21.36,"volume":1398},{"time":"2025-05-12","open":22.08,"high":22.82,"low":21.41,"close":21.47,"volume":7846},{"time":"2025-05-15","open":21.17,"high":21.7,"low":21.13,"close":21.61,"volume":3237},{"time":"2025-05-18","open":21.14,"high":21.5,"low":21,"close":21.23,"volume":2530},{"time":"2025-05-21","open":21.13,"high":21.57,"low":19.89,"close":20.01,"volume":5428},{"time":"2025-05-27","open":20.38,"high":20.61,"low":20.05,"close":20.19,"volume":3192},{"time":"2025-05-30","open":20.2,"high":20.2,"low":19.26,"close":19.47,"volume":1914},{"time":"2025-06-02","open":19.44,"high":20.44,"low":19.32,"close":20.21,"volume":4443},{"time":"2025-06-05","open":20.22,"high":20.49,"low":19.8,"close":19.98,"volume":3867},{"time":"2025-06-08","open":20.16,"high":22.38,"low":20.16,"close":22.05,"volume":6247},{"time":"2025-06-11","open":21.73,"high":21.77,"low":20.05,"close":20.1,"volume":6822},{"time":"2025-06-14","open":20.36,"high":20.87,"low":20.25,"close":20.68,"volume":1847},{"time":"2025-06-17","open":20.58,"high":21.54,"low":20.57,"close":21.42,"volume":4895},{"time":"2025-06-20","open":21.66,"high":21.83,"low":20.83,"close":21.01,"volume":2827},{"time":"2025-06-23","open":20.99,"high":22.71,"low":20.68,"close":22.15,"volume":7452},{"time":"2025-06-26","open":22.34,"high":23.32,"low":22.16,"close":22.64,"volume":4423},{"time":"2025-06-29","open":22.9,"high":23.1,"low":22.19,"close":22.79,"volume":4223},{"time":"2025-07-02","open":22.45,"high":22.71,"low":21.47,"close":22.43,"volume":6295},{"time":"2025-07-05","open":22.14,"high":22.33,"low":21.81,"close":21.94,"volume":2305},{"time":"2025-07-08","open":22.12,"high":23.98,"low":22.08,"close":23.76,"volume":8956},{"time":"2025-07-11","open":23.5,"high":23.6,"low":23.11,"close":23.36,"volume":1780},{"time":"2025-07-14","open":23.2,"high":23.72,"low":22.2,"close":22.62,"volume":6240},{"time":"2025-07-17","open":22.6,"high":23.53,"low":22.54,"close":23.05,"volume":4171},{"time":"2025-07-20","open":23.37,"high":23.77,"low":23.03,"close":23.19,"volume":5201},{"time":"2025-07-23","open":23.19,"high":23.56,"low":20.31,"close":20.64,"volume":9384},{"time":"2025-07-26","open":20.76,"high":21.23,"low":20.6,"close":20.61,"volume":1755},{"time":"2025-07-29","open":20.63,"high":20.79,"low":19.61,"close":19.77,"volume":4662},{"time":"2025-08-01","open":19.44,"high":19.49,"low":18.92,"close":19.25,"volume":1951},{"time":"2025-08-04","open":19.46,"high":20.48,"low":19.3,"close":20.36,"volume":4997},{"time":"2025-08-07","open":19.93,"high":20.38,"low":19.55,"close":19.9,"volume":3332},{"time":"2025-08-10","open":20.41,"high":21.8,"low":20.38,"close":21.75,"volume":6668},{"time":"2025-08-13","open":21.57,"high":25.59,"low":21.31,"close":24.51,"volume":22888},{"time":"2025-08-16","open":23.92,"high":24.44,"low":23.16,"close":23.58,"volume":11116},{"time":"2025-08-19","open":24.88,"high":26.47,"low":22.72,"close":23.44,"volume":22382},{"time":"2025-08-22","open":23.63,"high":25.17,"low":23.6,"close":24.75,"volume":7795},{"time":"2025-08-25","open":25.45,"high":25.82,"low":24,"close":24.77,"volume":12813},{"time":"2025-08-28","open":24.92,"high":25.08,"low":24.23,"close":24.32,"volume":4855},{"time":"2025-08-31","open":23.8,"high":24.18,"low":23.63,"close":24.17,"volume":2802},{"time":"2025-09-03","open":24.03,"high":24.65,"low":23.67,"close":24.43,"volume":7398},{"time":"2025-09-06","open":24.42,"high":24.68,"low":24.07,"close":24.44,"volume":2295},{"time":"2025-09-09","open":24.44,"high":24.87,"low":24.22,"close":24.55,"volume":7078},{"time":"2025-09-12","open":24.55,"high":24.56,"low":24,"close":24,"volume":2074},{"time":"2025-09-15","open":24.28,"high":25.4,"low":24.17,"close":24.83,"volume":15403},{"time":"2025-09-18","open":31.71,"high":32.32,"low":29.28,"close":29.5,"volume":43824},{"time":"2025-09-21","open":29.54,"high":30.14,"low":28.68,"close":29.3,"volume":15950},{"time":"2025-09-24","open":29.28,"high":36.24,"low":29.17,"close":35.42,"volume":65994},{"time":"2025-09-27","open":34.41,"high":34.99,"low":33.68,"close":34.41,"volume":13723},{"time":"2025-09-30","open":33.87,"high":37.51,"low":32.97,"close":37.25,"volume":39101},{"time":"2025-10-03","open":37.86,"high":38.02,"low":36.4,"close":36.76,"volume":14006},{"time":"2025-10-06","open":37.08,"high":38.62,"low":35.86,"close":37.36,"volume":38141},{"time":"2025-10-09","open":37.46,"high":39.59,"low":36.25,"close":36.28,"volume":43405},{"time":"2025-10-12","open":36.38,"high":37.45,"low":34.64,"close":35.59,"volume":26197},{"time":"2025-10-15","open":36.36,"high":38.32,"low":35.59,"close":36.94,"volume":58293},{"time":"2025-10-18","open":37.51,"high":38.45,"low":37.51,"close":38.03,"volume":9517},{"time":"2025-10-21","open":38.05,"high":38.34,"low":36.01,"close":38.12,"volume":32828},{"time":"2025-10-24","open":39.94,"high":41.06,"low":37.78,"close":38.2,"volume":29488},{"time":"2025-10-27","open":38.31,"high":42.41,"low":38.2,"close":41.29,"volume":65521},{"time":"2025-10-30","open":40.89,"high":41.37,"low":39.73,"close":39.93,"volume":31688},{"time":"2025-11-02","open":40.28,"high":40.4,"low":36.85,"close":37,"volume":23390},{"time":"2025-11-05","open":37.39,"high":38.63,"low":36.75,"close":38.1,"volume":57614},{"time":"2025-11-08","open":38.83,"high":39.46,"low":37.91,"close":38.38,"volume":11972},{"time":"2025-11-11","open":38.08,"high":38.16,"low":35.4,"close":35.88,"volume":39486},{"time":"2025-11-14","open":34.92,"high":36.04,"low":34.57,"close":35.47,"volume":18748},{"time":"2025-11-17","open":35.36,"high":35.69,"low":33.52,"close":35.04,"volume":62844},{"time":"2025-11-20","open":36.02,"high":36.62,"low":32.84,"close":34.44,"volume":75149},{"time":"2025-11-23","open":34.92,"high":36.1,"low":34.63,"close":35.75,"volume":20090},{"time":"2025-11-26","open":36.11,"high":40.53,"low":36.06,"close":40.5,"volume":16122},{"time":"2025-11-29","open":39.81,"high":40.32,"low":39.55,"close":39.98,"volume":14421},{"time":"2025-12-02","open":40.4,"high":43.95,"low":39.99,"close":40.47,"volume":54008},{"time":"2025-12-05","open":41.15,"high":42.78,"low":41.15,"close":41.35,"volume":14028},{"time":"2025-12-08","open":41.72,"high":42.06,"low":38.84,"close":40.72,"volume":47747},{"time":"2025-12-11","open":40.01,"high":40.11,"low":37.57,"close":37.77,"volume":28244},{"time":"2025-12-14","open":38.27,"high":38.42,"low":36.87,"close":37.22,"volume":26424},{"time":"2025-12-17","open":37.5,"high":37.77,"low":35.61,"close":36.78,"volume":39446},{"time":"2025-12-20","open":37.8,"high":37.82,"low":36.24,"close":36.33,"volume":8139},{"time":"2025-12-23","open":36.16,"high":36.74,"low":34.9,"close":36.1,"volume":9756},{"time":"2025-12-26","open":36.1,"high":36.43,"low":35.8,"close":36.15,"volume":3885},{"time":"2025-12-29","open":35.95,"high":38.2,"low":35.77,"close":36.85,"volume":20691},{"time":"2026-01-01","open":37.7,"high":39.8,"low":37.7,"close":39.32,"volume":20147},{"time":"2026-01-04","open":41.58,"high":42.03,"low":38.9,"close":39.96,"volume":32055},{"time":"2026-01-07","open":40.1,"high":45.67,"low":40.07,"close":45.46,"volume":86037},{"time":"2026-01-10","open":44.15,"high":45.39,"low":43.83,"close":44,"volume":20830},{"time":"2026-01-13","open":45.77,"high":50.32,"low":45.16,"close":48.25,"volume":109126},{"time":"2026-01-16","open":49.2,"high":50.14,"low":46.66,"close":46.89,"volume":28397},{"time":"2026-01-19","open":47.21,"high":54.35,"low":46.95,"close":54.2,"volume":99544},{"time":"2026-01-22","open":54.19,"high":54.54,"low":44.4,"close":45.01,"volume":60460},{"time":"2026-01-25","open":44.18,"high":44.48,"low":42.22,"close":43.89,"volume":35464},{"time":"2026-01-28","open":46.55,"high":49.52,"low":45.9,"close":46.41,"volume":114395},{"time":"2026-01-31","open":45.57,"high":49.78,"low":45.46,"close":48.75,"volume":29682},{"time":"2026-02-03","open":49.95,"high":51.43,"low":46.73,"close":48.19,"volume":177541},{"time":"2026-02-06","open":49.01,"high":51.25,"low":48.77,"close":50.52,"volume":33975},{"time":"2026-02-09","open":49.52,"high":51.16,"low":46.71,"close":48.17,"volume":86357},{"time":"2026-02-12","open":47.7,"high":48.89,"low":44.91,"close":46.73,"volume":93163},{"time":"2026-02-15","open":45.76,"high":46.77,"low":45.4,"close":46.15,"volume":35887},{"time":"2026-02-18","open":45.85,"high":46.71,"low":42.83,"close":44.07,"volume":74695},{"time":"2026-02-21","open":43.96,"high":44.49,"low":43.13,"close":43.59,"volume":18699},{"time":"2026-02-24","open":43.95,"high":46.91,"low":43.49,"close":45.42,"volume":69034},{"time":"2026-02-27","open":44.36,"high":46.5,"low":44.28,"close":45.53,"volume":19883},{"time":"2026-03-02","open":44.1,"high":46.07,"low":42.09,"close":45.5,"volume":96060},{"time":"2026-03-05","open":44.74,"high":46.42,"low":43.23,"close":43.37,"volume":79218},{"time":"2026-03-08","open":42.59,"high":47.82,"low":41.59,"close":46.73,"volume":68176},{"time":"2026-03-11","open":46.77,"high":48.78,"low":45.12,"close":45.73,"volume":90090},{"time":"2026-03-14","open":47.83,"high":49.11,"low":45.64,"close":45.69,"volume":29078},{"time":"2026-03-17","open":45.78,"high":46.38,"low":43.6,"close":46.16,"volume":62211},{"time":"2026-03-20","open":46.81,"high":47.49,"low":43.59,"close":43.85,"volume":26600},{"time":"2026-03-23","open":44.4,"high":47.79,"low":43.16,"close":47.14,"volume":81021},{"time":"2026-03-26","open":46.12,"high":46.54,"low":42.81,"close":43.08,"volume":43408},{"time":"2026-03-29","open":43.62,"high":44.17,"low":40.58,"close":44.1,"volume":58007},{"time":"2026-04-01","open":44.86,"high":50.43,"low":44.86,"close":50.3,"volume":76500},{"time":"2026-04-04","open":50.8,"high":52.33,"low":49.82,"close":50.71,"volume":34942},{"time":"2026-04-07","open":51.58,"high":62.01,"low":51.16,"close":61.63,"volume":127279},{"time":"2026-04-10","open":61.45,"high":63.33,"low":60.7,"close":62.31,"volume":32989},{"time":"2026-04-13","open":62.16,"high":65.78,"low":62.03,"close":64.88,"volume":92310},{"time":"2026-04-16","open":64.83,"high":70.27,"low":64.23,"close":68.44,"volume":67423},{"time":"2026-04-19","open":68.35,"high":69.14,"low":65.04,"close":66.24,"volume":85314},{"time":"2026-04-22","open":67.81,"high":85.15,"low":64.93,"close":82.49,"volume":160294},{"time":"2026-04-25","open":83.45,"high":87.03,"low":82.56,"close":84.94,"volume":68677},{"time":"2026-04-28","open":81.22,"high":95.47,"low":80.74,"close":94.43,"volume":216623},{"time":"2026-05-01","open":93.09,"high":100.39,"low":92.57,"close":99.61,"volume":66845},{"time":"2026-05-04","open":99.13,"high":113.43,"low":95.55,"close":112.95,"volume":226470},{"time":"2026-05-07","open":111,"high":130.5,"low":109.09,"close":124.86,"volume":188412},{"time":"2026-05-10","open":130.87,"high":132.68,"low":114.94,"close":120.54,"volume":178526},{"time":"2026-05-13","open":124.02,"high":124.94,"low":106.71,"close":108.63,"volume":254461},{"time":"2026-05-16","open":113.38,"high":115.45,"low":103.81,"close":108.01,"volume":128537},{"time":"2026-05-19","open":106.8,"high":121.87,"low":102.35,"close":118.43,"volume":309053},{"time":"2026-05-22","open":120.18,"high":122.71,"low":118.04,"close":119.76,"volume":77323},{"time":"2026-05-25","open":121.97,"high":125.54,"low":117.01,"close":121.75,"volume":164951},{"time":"2026-05-28","open":121.27,"high":126.55,"low":113.52,"close":114.58,"volume":145095},{"time":"2026-05-31","open":109.36,"high":113.23,"low":104.12,"close":107.81,"volume":168987},{"time":"2026-06-03","open":116.28,"high":118.22,"low":98.28,"close":98.76,"volume":284657},{"time":"2026-06-06","open":110.96,"high":112.48,"low":106.6,"close":110.12,"volume":102559},{"time":"2026-06-09","open":112.66,"high":119.36,"low":99.4,"close":116.95,"volume":450247},{"time":"2026-06-12","open":117.38,"high":127.54,"low":115.27,"close":124.47,"volume":134137},{"time":"2026-06-15","open":129.42,"high":132.55,"low":116.85,"close":121.06,"volume":306412},{"time":"2026-06-18","open":131.75,"high":135.41,"low":127.85,"close":133.81,"volume":121932},{"time":"2026-06-21","open":139.05,"high":141.38,"low":128.3,"close":132.17,"volume":233155},{"time":"2026-06-24","open":132.84,"high":140.64,"low":125.37,"close":127.69,"volume":370631},{"time":"2026-06-27","open":126.89,"high":131.85,"low":118.45,"close":131.64,"volume":98290},{"time":"2026-06-30","open":131.8,"high":142.28,"low":117.58,"close":120.26,"volume":331547},{"time":"2026-07-06","open":122.5,"high":127.25,"low":104.36,"close":110.23,"volume":343717},{"time":"2026-07-09","open":114.8,"high":116.55,"low":107.37,"close":109.76,"volume":159761},{"time":"2026-07-12","open":105.62,"high":109.12,"low":101.74,"close":107.71,"volume":189466},{"time":"2026-07-15","open":109.25,"high":109.42,"low":89.55,"close":94.99,"volume":308949},{"time":"2026-07-18","open":97.43,"high":100.92,"low":96.86,"close":97.03,"volume":97180},{"time":"2026-07-21","open":103.05,"high":106.78,"low":99.17,"close":100.03,"volume":243862},{"time":"2026-07-24","open":100.35,"high":101.65,"low":91.53,"close":92.29,"volume":138923}], <tr><td>2026-05-13T00:00:00Z</td><td>124.02</td><td>124.94</td><td>106.71</td><td>108.63</td><td>254461</td></tr>
+<tr><td>2026-05-16T00:00:00Z</td><td>113.38</td><td>115.45</td><td>103.81</td><td>108.01</td><td>128537</td></tr>
+<tr><td>2026-05-19T00:00:00Z</td><td>106.8</td><td>121.87</td><td>102.35</td><td>118.43</td><td>309053</td></tr>
+<tr><td>2026-05-22T00:00:00Z</td><td>120.18</td><td>122.71</td><td>118.04</td><td>119.76</td><td>77323</td></tr>
+<tr><td>2026-05-25T00:00:00Z</td><td>121.97</td><td>125.54</td><td>117.01</td><td>121.75</td><td>164951</td></tr>
+<tr><td>2026-05-28T00:00:00Z</td><td>121.27</td><td>126.55</td><td>113.52</td><td>114.58</td><td>145095</td></tr>
+<tr><td>2026-05-31T00:00:00Z</td><td>109.36</td><td>113.23</td><td>104.12</td><td>107.81</td><td>168987</td></tr>
+<tr><td>2026-06-03T00:00:00Z</td><td>116.28</td><td>118.22</td><td>98.28</td><td>98.76</td><td>284657</td></tr>
+<tr><td>2026-06-06T00:00:00Z</td><td>110.96</td><td>112.48</td><td>106.6</td><td>110.12</td><td>102559</td></tr>
+<tr><td>2026-06-09T00:00:00Z</td><td>112.66</td><td>119.36</td><td>99.4</td><td>116.95</td><td>450247</td></tr>
+<tr><td>2026-06-12T00:00:00Z</td><td>117.38</td><td>127.54</td><td>115.27</td><td>124.47</td><td>134137</td></tr>
+<tr><td>2026-06-15T00:00:00Z</td><td>129.42</td><td>132.55</td><td>116.85</td><td>121.06</td><td>306412</td></tr>
+<tr><td>2026-06-18T00:00:00Z</td><td>131.75</td><td>135.41</td><td>127.85</td><td>133.81</td><td>121932</td></tr>
+<tr><td>2026-06-21T00:00:00Z</td><td>139.05</td><td>141.38</td><td>128.3</td><td>132.17</td><td>233155</td></tr>
+<tr><td>2026-06-24T00:00:00Z</td><td>132.84</td><td>140.64</td><td>125.37</td><td>127.69</td><td>370631</td></tr>
+<tr><td>2026-06-27T00:00:00Z</td><td>126.89</td><td>131.85</td><td>118.45</td><td>131.64</td><td>98290</td></tr>
+<tr><td>2026-06-30T00:00:00Z</td><td>131.8</td><td>142.28</td><td>117.58</td><td>120.26</td><td>331547</td></tr>
+<tr><td>2026-07-06T00:00:00Z</td><td>122.5</td><td>127.25</td><td>104.36</td><td>110.23</td><td>343717</td></tr>
+<tr><td>2026-07-09T00:00:00Z</td><td>114.8</td><td>116.55</td><td>107.37</td><td>109.76</td><td>159761</td></tr>
+<tr><td>2026-07-12T00:00:00Z</td><td>105.62</td><td>109.12</td><td>101.74</td><td>107.71</td><td>189466</td></tr>
+<tr><td>2026-07-15T00:00:00Z</td><td>109.25</td><td>109.42</td><td>89.55</td><td>94.99</td><td>308949</td></tr>
+<tr><td>2026-07-18T00:00:00Z</td><td>97.43</td><td>100.92</td><td>96.86</td><td>97.03</td><td>97180</td></tr>
+<tr><td>2026-07-21T00:00:00Z</td><td>103.05</td><td>106.78</td><td>99.17</td><td>100.03</td><td>243862</td></tr>
+<tr><td>2026-07-24T00:00:00Z</td><td>100.35</td><td>101.65</td><td>91.53</td><td>92.29</td><td>138923</td></tr>, false,
+  https://getdata.finance, https://getdata.finance/datasets/intc, https://getdata.finance/coverage/intc,
+  https://github.com/getdata-finance/intc-3d-ohlcv-stocks-historical-data, https://raw.githubusercontent.com/getdata-finance/intc-3d-ohlcv-stocks-historical-data/main/INTC_3d.csv, https://getdata-finance.github.io/intc-3d-ohlcv-stocks-historical-data/,
+  9, 1m · 3m · 5m · 15m · 30m · 1H · 12H · 3D · 1W
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>INTC 3d OHLCV US stocks Historical Data — Free Sample</title>
+  <meta name="description" content="INTC 3d OHLCV us stocks — free sample candlestick chart. Full historical data on getdata.finance.">
+  <link rel="canonical" href="https://getdata-finance.github.io/intc-3d-ohlcv-stocks-historical-data/">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+  <style>
+    :root {
+      --accent:       #c8cdd3;
+      --accent-hi:    #e8eaed;
+      --accent-dim:   rgba(200, 205, 211, 0.14);
+      --accent-border:rgba(200, 205, 211, 0.38);
+      --bg-0:  #080808;
+      --bg-1:  #0e0e0e;
+      --bg-2:  #141414;
+      --bg-3:  #1a1a1a;
+      --line-0: rgba(255,255,255,0.06);
+      --line-1: rgba(255,255,255,0.10);
+      --line-2: rgba(255,255,255,0.16);
+      --silver-ring: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.38) 0%,
+        rgba(200, 205, 211, 0.26) 24%,
+        rgba(90, 98, 110, 0.16) 50%,
+        rgba(200, 205, 211, 0.3) 76%,
+        rgba(255, 255, 255, 0.22) 100%
+      );
+      --surface-ring-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        0 28px 56px -16px rgba(0, 0, 0, 0.72),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      --text-hi:  #f2f2f2;
+      --text-mid: rgba(242,242,242,0.65);
+      --text-lo:  rgba(242,242,242,0.38);
+      --font-sans: 'Clash Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-display: 'Clash Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'SFMono-Regular', 'Fira Code', ui-monospace, monospace;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --up: #00c853;
+      --down: #ff1744;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    html, body { min-height: 100%; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg-0);
+      color: var(--text-hi);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection { background: var(--accent); color: #080808; }
+    a { color: var(--accent); text-decoration: none; transition: color 0.18s var(--ease-out); }
+    a:hover { color: var(--accent-hi); }
+
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(200, 205, 211, 0.08) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(200, 205, 211, 0.04) 0%, transparent 50%),
+        var(--bg-0);
+    }
+
+    .page-bg::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 140%;
+      height: 140%;
+      min-width: 900px;
+      min-height: 900px;
+      border-radius: 50%;
+      background: conic-gradient(
+        from 0deg,
+        rgba(200,205,211,0.12) 0%,
+        transparent 6%,
+        transparent 62%,
+        rgba(200,205,211,0.03) 78%,
+        rgba(200,205,211,0.08) 94%,
+        rgba(200,205,211,0.12) 100%
+      );
+      animation: bg-spin 18s linear infinite;
+      filter: blur(2px);
+      opacity: 0.6;
+    }
+
+    @keyframes bg-spin {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to   { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .page-bg::before { animation: none; }
+      .hero { animation: none; }
+    }
+
+    .shell {
+      position: relative;
+      z-index: 1;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 2.5rem) 3rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .brand {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.125rem;
+      letter-spacing: -0.02em;
+      color: var(--text-hi);
+      text-transform: lowercase;
+    }
+
+    .brand span {
+      color: var(--text-lo);
+      font-weight: 500;
+      margin-left: 0.15rem;
+    }
+
+    .topbar-links {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+    }
+
+    .topbar-links a { color: var(--text-mid); }
+    .topbar-links a:hover { color: var(--accent); }
+
+    .hero {
+      margin-bottom: 2rem;
+      animation: hero-enter 0.75s var(--ease-out) both;
+    }
+
+    @keyframes hero-enter {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--line-1);
+      font-family: var(--font-display);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .pill.sym {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-color: var(--accent-border);
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.08;
+      margin: 0 0 0.75rem;
+      max-width: 22ch;
+      background: linear-gradient(180deg, #ffffff 15%, #c8cdd3 55%, #8f96a3 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .lead {
+      color: var(--text-mid);
+      max-width: 62ch;
+      margin: 0;
+      font-size: clamp(0.9rem, 1.4vw, 1.02rem);
+      line-height: 1.65;
+    }
+
+    .lead strong { color: var(--text-hi); font-weight: 600; }
+
+    .update-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-mid);
+    }
+
+    .update-badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--up);
+      box-shadow: 0 0 8px rgba(0, 200, 83, 0.5);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      height: 40px;
+      padding: 0 1.15rem;
+      border-radius: 9999px;
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 0.8125rem;
+      border: 1px solid transparent;
+      transition: all 0.18s var(--ease-out);
+      cursor: pointer;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(180deg, var(--accent-hi) 0%, var(--accent) 100%);
+      color: #0a0a0a;
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(180deg, #ffffff 0%, #d1d5db 100%);
+      color: #0a0a0a;
+      border-color: rgba(255, 255, 255, 0.35);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(200, 205, 211, 0.22);
+    }
+
+    .btn-ghost {
+      background: rgba(8, 8, 8, 0.35);
+      color: var(--text-hi);
+      border: 1px solid var(--accent-border);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 8px 20px -12px rgba(0, 0, 0, 0.45);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.96);
+      color: #000;
+      border-color: rgba(255, 255, 255, 0.85);
+      transform: translateY(-1px);
+    }
+
+    .stats {
+      display: grid;
+      gap: 1px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      margin: 2rem 0;
+      border: 1px solid var(--line-0);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--line-0);
+    }
+
+    .stat {
+      background: var(--bg-1);
+      padding: 1.1rem 1.15rem;
+      transition: background 0.18s var(--ease-out);
+    }
+
+    .stat:hover { background: var(--bg-2); }
+    .stat label {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-hi);
+    }
+
+    .stat small {
+      display: block;
+      color: var(--text-lo);
+      font-size: 0.75rem;
+      margin-top: 0.2rem;
+    }
+
+    .panel-wrap {
+      position: relative;
+      padding: 1px;
+      border-radius: var(--radius-lg);
+      background: var(--silver-ring);
+      box-shadow: var(--surface-ring-shadow);
+      margin-bottom: 1.5rem;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .panel-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 1px;
+      border-radius: calc(var(--radius-lg) - 1px);
+      pointer-events: none;
+      z-index: 2;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.14),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+    }
+
+    .panel {
+      position: relative;
+      z-index: 1;
+      background: rgba(8, 8, 8, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: calc(var(--radius-lg) - 1px);
+      overflow: hidden;
+    }
+
+    .panel-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.85rem 1.15rem;
+      border-bottom: 1px solid rgba(200, 205, 211, 0.1);
+      background: rgba(8, 8, 8, 0.55);
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-hi);
+      letter-spacing: -0.01em;
+    }
+
+    .panel-head .sub {
+      color: var(--text-lo);
+      font-size: 0.75rem;
+      margin-top: 0.15rem;
+    }
+
+    .ohlc-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0.5rem 1.15rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      border-bottom: 1px solid rgba(200, 205, 211, 0.1);
+      background: rgba(8, 8, 8, 0.72);
+    }
+
+    .ohlc-bar span { color: var(--text-lo); }
+    .ohlc-bar b { color: var(--text-hi); font-weight: 500; }
+    .ohlc-bar .up { color: var(--up); }
+    .ohlc-bar .down { color: var(--down); }
+
+    #chart { width: 100%; height: 420px; background: var(--bg-0); }
+    #volume-chart { width: 100%; height: 100px; border-top: 1px solid rgba(200, 205, 211, 0.08); background: var(--bg-0); }
+
+    .banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(135deg, rgba(200, 205, 211, 0.12) 0%, rgba(8, 8, 8, 0.95) 60%),
+        var(--bg-2);
+      border: 1px solid var(--accent-border);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 16px 40px -16px rgba(0, 0, 0, 0.6);
+    }
+
+    .banner strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-hi);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.01em;
+    }
+
+    .banner p {
+      margin: 0;
+      color: var(--text-mid);
+      font-size: 0.9rem;
+      max-width: 50ch;
+      line-height: 1.6;
+    }
+
+    .banner .btn {
+      background: linear-gradient(180deg, var(--accent-hi) 0%, var(--accent) 100%);
+      color: #0a0a0a;
+      border-color: rgba(255, 255, 255, 0.22);
+      flex-shrink: 0;
+    }
+
+    .banner .btn:hover {
+      background: linear-gradient(180deg, #ffffff 0%, #d1d5db 100%);
+      color: #0a0a0a;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      max-height: 280px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.75rem;
+    }
+
+    th, td {
+      padding: 0.5rem 0.85rem;
+      text-align: left;
+      border-bottom: 1px solid var(--line-0);
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      font-family: var(--font-display);
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-hi);
+      font-weight: 600;
+      background: var(--bg-2);
+    }
+
+    td { color: var(--text-mid); }
+    td.num, th:nth-child(n+2) {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+    }
+
+    tbody tr:hover td { background: rgba(255,255,255,0.02); }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line-0);
+      font-size: 0.75rem;
+      color: var(--text-lo);
+      line-height: 1.8;
+    }
+
+    footer a { color: var(--text-mid); }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 640px) {
+      #chart { height: 300px; }
+      .topbar { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+      h1 { max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">GetData<span>· sample</span></div>
+      <nav class="topbar-links">
+        <a href="https://github.com/getdata-finance/intc-3d-ohlcv-stocks-historical-data">GitHub</a>
+        <a href="https://getdata.finance/datasets/intc">getdata.finance</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="pill-row">
+        <span class="pill sym">INTC</span>
+        <span class="pill">3D OHLCV</span>
+        <span class="pill">US stocks</span>
+        <span class="pill">Weekly · Saturday 8am UTC+0</span>
+      </div>
+      <h1>INTC</h1>
+      <p class="lead">US equity cash and extended sessions — institutional-style OHLCV candles for US stocks. Free evaluation sample — <strong>20</strong> candles on GitHub; full archive <strong>1,784</strong> rows at <code>1m</code> on <a href="https://getdata.finance/datasets/intc">getdata.finance</a> with <strong>9</strong> timeframes (1m · 3m · 5m · 15m · 30m · 1H · 12H · 3D · 1W).</p>
+      <p class="update-badge">Data update every Saturday, 8am UTC+0</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://getdata.finance/datasets/intc">Get full dataset on getdata.finance</a>
+        <a class="btn btn-ghost" href="https://raw.githubusercontent.com/getdata-finance/intc-3d-ohlcv-stocks-historical-data/main/INTC_3d.csv">Download sample CSV</a>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat"><label>Sample rows</label><strong>20</strong><small>2026-07-06 -> 2026-07-31</small></div>
+      <div class="stat"><label>Full archive</label><strong>1,784</strong><small>Production dataset</small></div>
+      <div class="stat"><label>Full period</label><strong style="font-size:1rem">2010-03-29</strong><small>-> 2026-07-30</small></div>
+      <div class="stat"><label>Updates</label><strong>Weekly</strong><small>Every Saturday, 8am UTC+0 · getdata.finance + GitHub</small></div>
+      <div class="stat"><label>Full timeframes</label><strong>9</strong><small>1m · 3m · 5m · 15m · 30m · 1H · 12H · 3D · 1W</small></div>
+      <div class="stat"><label>Timeframe</label><strong>3D</strong><small>OHLCV CSV sample</small></div>
+    </div>
+
+    <div class="panel-wrap">
+      <section class="panel" aria-label="OHLC candlestick chart">
+        <div class="panel-head">
+          <div>
+            <h2>INTC · candlestick preview</h2>
+            <div class="sub">Last 320 bars from the GitHub sample</div>
+          </div>
+        </div>
+        <div class="ohlc-bar" id="ohlcHover">
+          <span>O <b id="hO">—</b></span>
+          <span>H <b id="hH">—</b></span>
+          <span>L <b id="hL">—</b></span>
+          <span>C <b id="hC">—</b></span>
+          <span>Vol <b id="hV">—</b></span>
+          <span>Time <b id="hT">—</b></span>
+        </div>
+        <div id="chart"></div>
+        <div id="volume-chart"></div>
+      </section>
+    </div>
+
+    <aside class="banner">
+      <div>
+        <strong>Need the complete history?</strong>
+        <p>Download the full INTC archive (1,784 rows at <code>1m</code>, 9 timeframes) on <a href="https://getdata.finance/datasets/intc">getdata.finance</a> — built for backtesting &amp; algo trading.</p>
+      </div>
+      <a class="btn" href="https://getdata.finance/datasets/intc">Open getdata.finance -></a>
+    </aside>
+
+    <div class="panel-wrap">
+      <section class="panel">
+        <div class="panel-head"><h2>Sample data</h2><span class="sub">INTC_3d.csv</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>datetime</th><th>open</th><th>high</th><th>low</th><th>close</th><th>volume</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2026-05-13T00:00:00Z</td><td>124.02</td><td>124.94</td><td>106.71</td><td>108.63</td><td>254461</td></tr>
+<tr><td>2026-05-16T00:00:00Z</td><td>113.38</td><td>115.45</td><td>103.81</td><td>108.01</td><td>128537</td></tr>
+<tr><td>2026-05-19T00:00:00Z</td><td>106.8</td><td>121.87</td><td>102.35</td><td>118.43</td><td>309053</td></tr>
+<tr><td>2026-05-22T00:00:00Z</td><td>120.18</td><td>122.71</td><td>118.04</td><td>119.76</td><td>77323</td></tr>
+<tr><td>2026-05-25T00:00:00Z</td><td>121.97</td><td>125.54</td><td>117.01</td><td>121.75</td><td>164951</td></tr>
+<tr><td>2026-05-28T00:00:00Z</td><td>121.27</td><td>126.55</td><td>113.52</td><td>114.58</td><td>145095</td></tr>
+<tr><td>2026-05-31T00:00:00Z</td><td>109.36</td><td>113.23</td><td>104.12</td><td>107.81</td><td>168987</td></tr>
+<tr><td>2026-06-03T00:00:00Z</td><td>116.28</td><td>118.22</td><td>98.28</td><td>98.76</td><td>284657</td></tr>
+<tr><td>2026-06-06T00:00:00Z</td><td>110.96</td><td>112.48</td><td>106.6</td><td>110.12</td><td>102559</td></tr>
+<tr><td>2026-06-09T00:00:00Z</td><td>112.66</td><td>119.36</td><td>99.4</td><td>116.95</td><td>450247</td></tr>
+<tr><td>2026-06-12T00:00:00Z</td><td>117.38</td><td>127.54</td><td>115.27</td><td>124.47</td><td>134137</td></tr>
+<tr><td>2026-06-15T00:00:00Z</td><td>129.42</td><td>132.55</td><td>116.85</td><td>121.06</td><td>306412</td></tr>
+<tr><td>2026-06-18T00:00:00Z</td><td>131.75</td><td>135.41</td><td>127.85</td><td>133.81</td><td>121932</td></tr>
+<tr><td>2026-06-21T00:00:00Z</td><td>139.05</td><td>141.38</td><td>128.3</td><td>132.17</td><td>233155</td></tr>
+<tr><td>2026-06-24T00:00:00Z</td><td>132.84</td><td>140.64</td><td>125.37</td><td>127.69</td><td>370631</td></tr>
+<tr><td>2026-06-27T00:00:00Z</td><td>126.89</td><td>131.85</td><td>118.45</td><td>131.64</td><td>98290</td></tr>
+<tr><td>2026-06-30T00:00:00Z</td><td>131.8</td><td>142.28</td><td>117.58</td><td>120.26</td><td>331547</td></tr>
+<tr><td>2026-07-06T00:00:00Z</td><td>122.5</td><td>127.25</td><td>104.36</td><td>110.23</td><td>343717</td></tr>
+<tr><td>2026-07-09T00:00:00Z</td><td>114.8</td><td>116.55</td><td>107.37</td><td>109.76</td><td>159761</td></tr>
+<tr><td>2026-07-12T00:00:00Z</td><td>105.62</td><td>109.12</td><td>101.74</td><td>107.71</td><td>189466</td></tr>
+<tr><td>2026-07-15T00:00:00Z</td><td>109.25</td><td>109.42</td><td>89.55</td><td>94.99</td><td>308949</td></tr>
+<tr><td>2026-07-18T00:00:00Z</td><td>97.43</td><td>100.92</td><td>96.86</td><td>97.03</td><td>97180</td></tr>
+<tr><td>2026-07-21T00:00:00Z</td><td>103.05</td><td>106.78</td><td>99.17</td><td>100.03</td><td>243862</td></tr>
+<tr><td>2026-07-24T00:00:00Z</td><td>100.35</td><td>101.65</td><td>91.53</td><td>92.29</td><td>138923</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      GetData · GitHub Pages sample ·
+      Weekly update every Saturday, 8am UTC+0 ·
+      <a href="https://getdata.finance/datasets/intc">Full data on getdata.finance</a> ·
+      Updated 2026-08-05 UTC ·
+      <a href="https://github.com/getdata-finance/intc-3d-ohlcv-stocks-historical-data">Repository</a> ·
+      <a href="https://raw.githubusercontent.com/getdata-finance/intc-3d-ohlcv-stocks-historical-data/main/INTC_3d.csv">Raw CSV</a> ·
+      <a href="https://getdata.finance/coverage/intc">Coverage report</a>
+    </footer>
+  </div>
+
+  <script>
+    const BARS = [{"time":"2023-11-25","open":43.55,"high":44.49,"low":43.55,"close":44.03,"volume":3707},{"time":"2023-11-28","open":43.63,"high":45.28,"low":43.61,"close":44.67,"volume":16034},{"time":"2023-12-01","open":44.17,"high":44.29,"low":42.81,"close":43.68,"volume":9024},{"time":"2023-12-04","open":43.24,"high":43.24,"low":41.12,"close":41.23,"volume":21106},{"time":"2023-12-07","open":41.69,"high":42.9,"low":41.13,"close":42.66,"volume":10450},{"time":"2023-12-10","open":43.1,"high":44.67,"low":43.03,"close":44,"volume":12003},{"time":"2023-12-13","open":44,"high":47.21,"low":43.28,"close":46.07,"volume":29736},{"time":"2023-12-16","open":46.1,"high":46.17,"low":45.35,"close":45.64,"volume":5458},{"time":"2023-12-19","open":45.5,"high":47.06,"low":45.45,"close":47,"volume":19493},{"time":"2023-12-22","open":47.16,"high":48.1,"low":47.15,"close":47.97,"volume":6587},{"time":"2023-12-25","open":48.85,"high":51.22,"low":48.66,"close":50.73,"volume":15954},{"time":"2023-12-28","open":50.72,"high":50.82,"low":49.72,"close":50.2,"volume":10485},{"time":"2023-12-31","open":49.2,"high":49.32,"low":47.4,"close":47.77,"volume":9525},{"time":"2024-01-03","open":47.05,"high":47.77,"low":45.18,"close":46.82,"volume":32353},{"time":"2024-01-06","open":46.99,"high":48.7,"low":46.91,"close":48.38,"volume":7452},{"time":"2024-01-09","open":47.99,"high":48.5,"low":46.67,"close":47.58,"volume":24348},{"time":"2024-01-12","open":47.43,"high":47.54,"low":46.56,"close":47.04,"volume":9281},{"time":"2024-01-15","open":46.96,"high":47.17,"low":45.6,"close":46,"volume":16994},{"time":"2024-01-18","open":47,"high":48.7,"low":46.12,"close":48.1,"volume":19748},{"time":"2024-01-21","open":48.8,"high":49.11,"low":47.27,"close":48.83,"volume":17698},{"time":"2024-01-24","open":49.08,"high":50.24,"low":43.3,"close":43.58,"volume":35371},{"time":"2024-01-27","open":43.65,"high":43.93,"low":42.76,"close":43.78,"volume":4533},{"time":"2024-01-30","open":43.56,"high":43.77,"low":42.3,"close":43.32,"volume":25906},{"time":"2024-02-02","open":42.95,"high":43.05,"low":41.55,"close":42.52,"volume":10033},{"time":"2024-02-05","open":42.56,"high":43.09,"low":42.09,"close":42.73,"volume":19675},{"time":"2024-02-08","open":42.65,"high":43.46,"low":42.28,"close":43.25,"volume":10115},{"time":"2024-02-11","open":43.33,"high":44.98,"low":42.71,"close":43.12,"volume":15556},{"time":"2024-02-14","open":43.81,"high":45.22,"low":43.07,"close":43.46,"volume":19927},{"time":"2024-02-20","open":44.18,"high":45.11,"low":42.48,"close":42.9,"volume":34489},{"time":"2024-02-23","open":43.07,"high":43.45,"low":42.61,"close":42.92,"volume":5037},{"time":"2024-02-26","open":43.44,"high":43.62,"low":41.85,"close":41.95,"volume":12580},{"time":"2024-02-29","open":42.31,"high":44.21,"low":42.3,"close":43.77,"volume":11287},{"time":"2024-03-03","open":44.24,"high":46.56,"low":42.64,"close":43.11,"volume":19897},{"time":"2024-03-06","open":43.86,"high":46.57,"low":43.5,"close":43.95,"volume":32229},{"time":"2024-03-09","open":43.83,"high":44.87,"low":43.62,"close":44.81,"volume":9561},{"time":"2024-03-12","open":44.95,"high":45.21,"low":42.46,"close":42.72,"volume":20091},{"time":"2024-03-15","open":42.39,"high":43.09,"low":42.3,"close":42.62,"volume":7207},{"time":"2024-03-18","open":43.02,"high":43.32,"low":41.36,"close":42.13,"volume":24202},{"time":"2024-03-21","open":42.9,"high":43.55,"low":42.04,"close":42.5,"volume":11858},{"time":"2024-03-24","open":40.83,"high":42.21,"low":40.52,"close":41.94,"volume":12103},{"time":"2024-03-27","open":42.46,"high":44.54,"low":42.45,"close":44.1,"volume":12673},{"time":"2024-03-30","open":44.27,"high":45.35,"low":44.13,"close":44.45,"volume":5608},{"time":"2024-04-02","open":43.89,"high":44.02,"low":39.64,"close":39.67,"volume":22725},{"time":"2024-04-05","open":39.27,"high":39.4,"low":38.46,"close":38.61,"volume":8601},{"time":"2024-04-08","open":38.54,"high":38.81,"low":36.97,"close":37.15,"volume":22468},{"time":"2024-04-11","open":37.35,"high":37.61,"low":35.55,"close":35.63,"volume":8516},{"time":"2024-04-14","open":35.99,"high":36.64,"low":35.71,"close":36.17,"volume":13497},{"time":"2024-04-17","open":36.01,"high":36.07,"low":34.13,"close":34.14,"volume":18648},{"time":"2024-04-20","open":34.36,"high":34.5,"low":34.02,"close":34.35,"volume":4217},{"time":"2024-04-23","open":34.24,"high":35.23,"low":34.13,"close":35.09,"volume":15411},{"time":"2024-04-26","open":31.67,"high":32.18,"low":30.59,"close":31.82,"volume":9057},{"time":"2024-04-29","open":31.81,"high":31.85,"low":29.98,"close":30.3,"volume":14839},{"time":"2024-05-02","open":30.54,"high":31,"low":30.14,"close":30.84,"volume":5459},{"time":"2024-05-05","open":31.05,"high":31.39,"low":30.56,"close":30.61,"volume":2743},{"time":"2024-05-08","open":29.94,"high":30.4,"low":29.68,"close":29.79,"volume":4675},{"time":"2024-05-11","open":29.95,"high":31.07,"low":29.95,"close":30.44,"volume":2515},{"time":"2024-05-14","open":30.6,"high":32.2,"low":30.56,"close":31.99,"volume":5603},{"time":"2024-05-17","open":31.97,"high":32.05,"low":31.54,"close":31.79,"volume":1886},{"time":"2024-05-20","open":31.78,"high":32.37,"low":31.04,"close":31.38,"volume":5730},{"time":"2024-05-23","open":31.36,"high":31.51,"low":29.82,"close":30.66,"volume":6263},{"time":"2024-05-26","open":30.88,"high":31.31,"low":30.6,"close":31.03,"volume":2621},{"time":"2024-05-29","open":30.4,"high":30.9,"low":29.9,"close":30.83,"volume":7894},{"time":"2024-06-01","open":30.96,"high":31.01,"low":30,"close":30.25,"volume":3279},{"time":"2024-06-04","open":30.61,"high":30.78,"low":29.89,"close":30.36,"volume":9305},{"time":"2024-06-07","open":30.21,"high":30.72,"low":30.15,"close":30.72,"volume":2884},{"time":"2024-06-10","open":30.5,"high":31.41,"low":30.23,"close":30.71,"volume":8733},{"time":"2024-06-13","open":30.34,"high":30.52,"low":30.09,"close":30.4,"volume":4653},{"time":"2024-06-16","open":30.28,"high":31.41,"low":30.12,"close":30.57,"volume":3949},{"time":"2024-06-19","open":30.51,"high":31.3,"low":30.4,"close":31.05,"volume":5505},{"time":"2024-06-22","open":31.07,"high":31.37,"low":30.5,"close":30.53,"volume":2833},{"time":"2024-06-25","open":30.62,"high":30.77,"low":30.22,"close":30.55,"volume":5418},{"time":"2024-06-28","open":30.68,"high":31.25,"low":30.67,"close":30.88,"volume":2388},{"time":"2024-07-01","open":30.88,"high":31.28,"low":30.53,"close":31.15,"volume":5082},{"time":"2024-07-04","open":31.35,"high":32.28,"low":31.26,"close":31.93,"volume":3251},{"time":"2024-07-07","open":32.98,"high":35.16,"low":32.76,"close":34.54,"volume":13952},{"time":"2024-07-10","open":34.38,"high":35.42,"low":33.26,"close":34.44,"volume":15300},{"time":"2024-07-13","open":34.68,"high":35.17,"low":34.26,"close":34.41,"volume":4409},{"time":"2024-07-16","open":34.32,"high":37.09,"low":33.78,"close":34.83,"volume":30928},{"time":"2024-07-19","open":34.5,"high":34.5,"low":32.8,"close":32.95,"volume":6969},{"time":"2024-07-22","open":33.22,"high":33.35,"low":31.61,"close":31.63,"volume":15299},{"time":"2024-07-25","open":31.35,"high":31.93,"low":30.9,"close":31.32,"volume":13294},{"time":"2024-07-28","open":31.37,"high":31.41,"low":29.95,"close":30.07,"volume":6638},{"time":"2024-07-31","open":30.4,"high":30.81,"low":20.37,"close":21.43,"volume":24809},{"time":"2024-08-03","open":20.15,"high":20.33,"low":19.24,"close":20.06,"volume":10404},{"time":"2024-08-06","open":20.27,"high":20.56,"low":18.79,"close":20.45,"volume":13052},{"time":"2024-08-09","open":20.03,"high":20.07,"low":19.44,"close":19.65,"volume":3319},{"time":"2024-08-12","open":19.81,"high":20.44,"low":19.18,"close":19.86,"volume":7080},{"time":"2024-08-15","open":20.27,"high":21,"low":20.18,"close":20.82,"volume":5195},{"time":"2024-08-18","open":20.82,"high":21.57,"low":20.77,"close":20.94,"volume":5098},{"time":"2024-08-21","open":21.05,"high":21.38,"low":19.99,"close":20.47,"volume":7189},{"time":"2024-08-24","open":20.46,"high":20.48,"low":19.9,"close":20.09,"volume":1949},{"time":"2024-08-27","open":20.07,"high":20.54,"low":19.46,"close":20.08,"volume":6240},{"time":"2024-08-30","open":21.18,"high":22.06,"low":20.95,"close":21.99,"volume":6584},{"time":"2024-09-02","open":21.48,"high":21.63,"low":19.23,"close":19.36,"volume":7460},{"time":"2024-09-05","open":19.27,"high":19.84,"low":18.59,"close":18.84,"volume":4924},{"time":"2024-09-08","open":18.93,"high":19.48,"low":18.46,"close":18.92,"volume":3530},{"time":"2024-09-11","open":18.92,"high":19.74,"low":18.47,"close":19.6,"volume":7426},{"time":"2024-09-14","open":19.95,"high":21.01,"low":19.7,"close":20.87,"volume":4107},{"time":"2024-09-17","open":21.63,"high":22.52,"low":20.66,"close":21.09,"volume":20461},{"time":"2024-09-20","open":20.83,"high":23.06,"low":20.3,"close":21.8,"volume":14807},{"time":"2024-09-23","open":22.36,"high":24,"low":21.98,"close":23.51,"volume":16851},{"time":"2024-09-26","open":24.23,"high":24.6,"low":23.2,"close":23.84,"volume":10184},{"time":"2024-09-29","open":23.66,"high":23.89,"low":22.2,"close":22.62,"volume":7881},{"time":"2024-10-02","open":22.62,"high":23.01,"low":21.59,"close":22.53,"volume":9600},{"time":"2024-10-05","open":22.33,"high":22.59,"low":21.97,"close":22.34,"volume":2413},{"time":"2024-10-08","open":22.16,"high":23.47,"low":21.99,"close":23.17,"volume":6806},{"time":"2024-10-11","open":22.97,"high":23.76,"low":22.93,"close":23.51,"volume":2074},{"time":"2024-10-14","open":23.5,"high":23.71,"low":21.69,"close":22.26,"volume":8803},{"time":"2024-10-17","open":22.66,"high":22.76,"low":22.35,"close":22.72,"volume":3873},{"time":"2024-10-20","open":22.54,"high":22.82,"low":22.12,"close":22.34,"volume":3311},{"time":"2024-10-23","open":22.21,"high":23.28,"low":21.52,"close":22.62,"volume":6616},{"time":"2024-10-26","open":22.61,"high":23.21,"low":22.5,"close":22.88,"volume":2508},{"time":"2024-10-29","open":22.81,"high":23.08,"low":21.42,"close":21.48,"volume":8913},{"time":"2024-11-01","open":22.91,"high":23.51,"low":21.86,"close":23.15,"volume":13050},{"time":"2024-11-04","open":22.88,"high":25.06,"low":22.08,"close":25,"volume":17945},{"time":"2024-11-07","open":25.36,"high":26.37,"low":25.14,"close":26.16,"volume":10689},{"time":"2024-11-10","open":25.91,"high":26.23,"low":23.84,"close":24.12,"volume":9555},{"time":"2024-11-13","open":24,"high":25.55,"low":24,"close":24.29,"volume":11171},{"time":"2024-11-16","open":24.27,"high":24.96,"low":24.11,"close":24.8,"volume":3628},{"time":"2024-11-19","open":24.41,"high":24.71,"low":23.5,"close":24.4,"volume":13292},{"time":"2024-11-22","open":24.25,"high":24.63,"low":24.09,"close":24.45,"volume":3206},{"time":"2024-11-25","open":24.98,"high":25.51,"low":23.01,"close":23.59,"volume":10490},{"time":"2024-11-28","open":23.67,"high":24.22,"low":23.55,"close":23.99,"volume":1648},{"time":"2024-12-01","open":24.77,"high":25.42,"low":22.39,"close":22.42,"volume":11118},{"time":"2024-12-04","open":22.47,"high":22.48,"low":20.61,"close":20.85,"volume":8904},{"time":"2024-12-07","open":20.87,"high":21,"low":20.68,"close":20.76,"volume":2238},{"time":"2024-12-10","open":20.77,"high":20.84,"low":19.82,"close":20.73,"volume":6946},{"time":"2024-12-13","open":20.52,"high":20.74,"low":20.2,"close":20.28,"volume":2362},{"time":"2024-12-16","open":20.11,"high":21.04,"low":19.16,"close":19.25,"volume":10413},{"time":"2024-12-19","open":19.46,"high":19.7,"low":18.86,"close":19.47,"volume":7935},{"time":"2024-12-22","open":19.53,"high":20.34,"low":19.47,"close":20.32,"volume":5483},{"time":"2024-12-25","open":20.15,"high":20.6,"low":20.03,"close":20.26,"volume":4902},{"time":"2024-12-28","open":19.95,"high":20.06,"low":19.68,"close":19.75,"volume":2626},{"time":"2024-12-31","open":19.93,"high":20.37,"low":19.83,"close":20.16,"volume":6377},{"time":"2025-01-03","open":20.28,"high":20.61,"low":20.01,"close":20.5,"volume":1928},{"time":"2025-01-06","open":20.77,"high":20.92,"low":19.66,"close":19.83,"volume":9064},{"time":"2025-01-09","open":19.54,"high":19.54,"low":18.86,"close":19.08,"volume":2514},{"time":"2025-01-12","open":18.83,"high":19.46,"low":18.67,"close":19.16,"volume":4083},{"time":"2025-01-15","open":19.35,"high":21.54,"low":19.12,"close":21.43,"volume":10492},{"time":"2025-01-21","open":21.95,"high":22.35,"low":21.3,"close":21.51,"volume":7832},{"time":"2025-01-24","open":21.33,"high":21.33,"low":20.7,"close":20.77,"volume":1737},{"time":"2025-01-27","open":20.78,"high":21,"low":19.61,"close":19.71,"volume":9618},{"time":"2025-01-30","open":19.67,"high":20.27,"low":19.33,"close":19.37,"volume":8415},{"time":"2025-02-02","open":18.92,"high":19.69,"low":18.73,"close":19.25,"volume":5393},{"time":"2025-02-05","open":19.14,"high":19.71,"low":18.86,"close":19.05,"volume":5273},{"time":"2025-02-08","open":19.19,"high":20.02,"low":19.19,"close":19.7,"volume":1537},{"time":"2025-02-11","open":19.83,"high":24.77,"low":19.81,"close":24.06,"volume":25597},{"time":"2025-02-14","open":24.29,"high":25.13,"low":22.81,"close":23.55,"volume":16670},{"time":"2025-02-17","open":24.55,"high":27.49,"low":24.44,"close":25.66,"volume":28510},{"time":"2025-02-20","open":25.5,"high":26.23,"low":24.43,"close":24.8,"volume":16762},{"time":"2025-02-23","open":24.52,"high":24.74,"low":22.72,"close":22.95,"volume":18384},{"time":"2025-02-26","open":23.18,"high":24.38,"low":22.59,"close":23.68,"volume":28699},{"time":"2025-03-01","open":24.94,"high":24.99,"low":22.47,"close":22.71,"volume":20667},{"time":"2025-03-04","open":22.48,"high":22.52,"low":19.95,"close":20.7,"volume":34723},{"time":"2025-03-07","open":20.2,"high":21.14,"low":20.06,"close":20.58,"volume":8575},{"time":"2025-03-10","open":20.19,"high":21.11,"low":19.24,"close":20.63,"volume":21367},{"time":"2025-03-13","open":23.44,"high":24.47,"low":23.07,"close":23.98,"volume":25275},{"time":"2025-03-16","open":24.36,"high":26.35,"low":24.32,"close":25.88,"volume":20508},{"time":"2025-03-19","open":24.81,"high":25.17,"low":23.43,"close":24.2,"volume":17434},{"time":"2025-03-22","open":24.66,"high":24.93,"low":24.08,"close":24.14,"volume":3200},{"time":"2025-03-25","open":24.1,"high":24.69,"low":22.8,"close":23.57,"volume":9481},{"time":"2025-03-28","open":23.27,"high":23.52,"low":22.51,"close":22.66,"volume":2963},{"time":"2025-03-31","open":22.3,"high":22.69,"low":21.6,"close":21.91,"volume":13964},{"time":"2025-04-03","open":21.33,"high":23.83,"low":19.65,"close":19.81,"volume":36237},{"time":"2025-04-06","open":19.07,"high":20.61,"low":17.61,"close":18.1,"volume":44786},{"time":"2025-04-09","open":17.96,"high":21.67,"low":17.92,"close":19.68,"volume":56422},{"time":"2025-04-12","open":20.53,"high":20.99,"low":19.93,"close":20.26,"volume":9450},{"time":"2025-04-15","open":20.15,"high":20.41,"low":18.53,"close":18.87,"volume":12643},{"time":"2025-04-21","open":18.85,"high":20.97,"low":18.2,"close":20.51,"volume":12901},{"time":"2025-04-24","open":20.97,"high":21.49,"low":19.29,"close":19.99,"volume":7243},{"time":"2025-04-27","open":20.06,"high":21.02,"low":20,"close":20.28,"volume":7573},{"time":"2025-04-30","open":19.6,"high":20.72,"low":19.5,"close":20.54,"volume":8664},{"time":"2025-05-03","open":20.31,"high":20.52,"low":20.18,"close":20.21,"volume":1364},{"time":"2025-05-06","open":19.86,"high":21.18,"low":19.71,"close":20.95,"volume":6637},{"time":"2025-05-09","open":21.15,"high":21.39,"low":20.78,"close":21.36,"volume":1398},{"time":"2025-05-12","open":22.08,"high":22.82,"low":21.41,"close":21.47,"volume":7846},{"time":"2025-05-15","open":21.17,"high":21.7,"low":21.13,"close":21.61,"volume":3237},{"time":"2025-05-18","open":21.14,"high":21.5,"low":21,"close":21.23,"volume":2530},{"time":"2025-05-21","open":21.13,"high":21.57,"low":19.89,"close":20.01,"volume":5428},{"time":"2025-05-27","open":20.38,"high":20.61,"low":20.05,"close":20.19,"volume":3192},{"time":"2025-05-30","open":20.2,"high":20.2,"low":19.26,"close":19.47,"volume":1914},{"time":"2025-06-02","open":19.44,"high":20.44,"low":19.32,"close":20.21,"volume":4443},{"time":"2025-06-05","open":20.22,"high":20.49,"low":19.8,"close":19.98,"volume":3867},{"time":"2025-06-08","open":20.16,"high":22.38,"low":20.16,"close":22.05,"volume":6247},{"time":"2025-06-11","open":21.73,"high":21.77,"low":20.05,"close":20.1,"volume":6822},{"time":"2025-06-14","open":20.36,"high":20.87,"low":20.25,"close":20.68,"volume":1847},{"time":"2025-06-17","open":20.58,"high":21.54,"low":20.57,"close":21.42,"volume":4895},{"time":"2025-06-20","open":21.66,"high":21.83,"low":20.83,"close":21.01,"volume":2827},{"time":"2025-06-23","open":20.99,"high":22.71,"low":20.68,"close":22.15,"volume":7452},{"time":"2025-06-26","open":22.34,"high":23.32,"low":22.16,"close":22.64,"volume":4423},{"time":"2025-06-29","open":22.9,"high":23.1,"low":22.19,"close":22.79,"volume":4223},{"time":"2025-07-02","open":22.45,"high":22.71,"low":21.47,"close":22.43,"volume":6295},{"time":"2025-07-05","open":22.14,"high":22.33,"low":21.81,"close":21.94,"volume":2305},{"time":"2025-07-08","open":22.12,"high":23.98,"low":22.08,"close":23.76,"volume":8956},{"time":"2025-07-11","open":23.5,"high":23.6,"low":23.11,"close":23.36,"volume":1780},{"time":"2025-07-14","open":23.2,"high":23.72,"low":22.2,"close":22.62,"volume":6240},{"time":"2025-07-17","open":22.6,"high":23.53,"low":22.54,"close":23.05,"volume":4171},{"time":"2025-07-20","open":23.37,"high":23.77,"low":23.03,"close":23.19,"volume":5201},{"time":"2025-07-23","open":23.19,"high":23.56,"low":20.31,"close":20.64,"volume":9384},{"time":"2025-07-26","open":20.76,"high":21.23,"low":20.6,"close":20.61,"volume":1755},{"time":"2025-07-29","open":20.63,"high":20.79,"low":19.61,"close":19.77,"volume":4662},{"time":"2025-08-01","open":19.44,"high":19.49,"low":18.92,"close":19.25,"volume":1951},{"time":"2025-08-04","open":19.46,"high":20.48,"low":19.3,"close":20.36,"volume":4997},{"time":"2025-08-07","open":19.93,"high":20.38,"low":19.55,"close":19.9,"volume":3332},{"time":"2025-08-10","open":20.41,"high":21.8,"low":20.38,"close":21.75,"volume":6668},{"time":"2025-08-13","open":21.57,"high":25.59,"low":21.31,"close":24.51,"volume":22888},{"time":"2025-08-16","open":23.92,"high":24.44,"low":23.16,"close":23.58,"volume":11116},{"time":"2025-08-19","open":24.88,"high":26.47,"low":22.72,"close":23.44,"volume":22382},{"time":"2025-08-22","open":23.63,"high":25.17,"low":23.6,"close":24.75,"volume":7795},{"time":"2025-08-25","open":25.45,"high":25.82,"low":24,"close":24.77,"volume":12813},{"time":"2025-08-28","open":24.92,"high":25.08,"low":24.23,"close":24.32,"volume":4855},{"time":"2025-08-31","open":23.8,"high":24.18,"low":23.63,"close":24.17,"volume":2802},{"time":"2025-09-03","open":24.03,"high":24.65,"low":23.67,"close":24.43,"volume":7398},{"time":"2025-09-06","open":24.42,"high":24.68,"low":24.07,"close":24.44,"volume":2295},{"time":"2025-09-09","open":24.44,"high":24.87,"low":24.22,"close":24.55,"volume":7078},{"time":"2025-09-12","open":24.55,"high":24.56,"low":24,"close":24,"volume":2074},{"time":"2025-09-15","open":24.28,"high":25.4,"low":24.17,"close":24.83,"volume":15403},{"time":"2025-09-18","open":31.71,"high":32.32,"low":29.28,"close":29.5,"volume":43824},{"time":"2025-09-21","open":29.54,"high":30.14,"low":28.68,"close":29.3,"volume":15950},{"time":"2025-09-24","open":29.28,"high":36.24,"low":29.17,"close":35.42,"volume":65994},{"time":"2025-09-27","open":34.41,"high":34.99,"low":33.68,"close":34.41,"volume":13723},{"time":"2025-09-30","open":33.87,"high":37.51,"low":32.97,"close":37.25,"volume":39101},{"time":"2025-10-03","open":37.86,"high":38.02,"low":36.4,"close":36.76,"volume":14006},{"time":"2025-10-06","open":37.08,"high":38.62,"low":35.86,"close":37.36,"volume":38141},{"time":"2025-10-09","open":37.46,"high":39.59,"low":36.25,"close":36.28,"volume":43405},{"time":"2025-10-12","open":36.38,"high":37.45,"low":34.64,"close":35.59,"volume":26197},{"time":"2025-10-15","open":36.36,"high":38.32,"low":35.59,"close":36.94,"volume":58293},{"time":"2025-10-18","open":37.51,"high":38.45,"low":37.51,"close":38.03,"volume":9517},{"time":"2025-10-21","open":38.05,"high":38.34,"low":36.01,"close":38.12,"volume":32828},{"time":"2025-10-24","open":39.94,"high":41.06,"low":37.78,"close":38.2,"volume":29488},{"time":"2025-10-27","open":38.31,"high":42.41,"low":38.2,"close":41.29,"volume":65521},{"time":"2025-10-30","open":40.89,"high":41.37,"low":39.73,"close":39.93,"volume":31688},{"time":"2025-11-02","open":40.28,"high":40.4,"low":36.85,"close":37,"volume":23390},{"time":"2025-11-05","open":37.39,"high":38.63,"low":36.75,"close":38.1,"volume":57614},{"time":"2025-11-08","open":38.83,"high":39.46,"low":37.91,"close":38.38,"volume":11972},{"time":"2025-11-11","open":38.08,"high":38.16,"low":35.4,"close":35.88,"volume":39486},{"time":"2025-11-14","open":34.92,"high":36.04,"low":34.57,"close":35.47,"volume":18748},{"time":"2025-11-17","open":35.36,"high":35.69,"low":33.52,"close":35.04,"volume":62844},{"time":"2025-11-20","open":36.02,"high":36.62,"low":32.84,"close":34.44,"volume":75149},{"time":"2025-11-23","open":34.92,"high":36.1,"low":34.63,"close":35.75,"volume":20090},{"time":"2025-11-26","open":36.11,"high":40.53,"low":36.06,"close":40.5,"volume":16122},{"time":"2025-11-29","open":39.81,"high":40.32,"low":39.55,"close":39.98,"volume":14421},{"time":"2025-12-02","open":40.4,"high":43.95,"low":39.99,"close":40.47,"volume":54008},{"time":"2025-12-05","open":41.15,"high":42.78,"low":41.15,"close":41.35,"volume":14028},{"time":"2025-12-08","open":41.72,"high":42.06,"low":38.84,"close":40.72,"volume":47747},{"time":"2025-12-11","open":40.01,"high":40.11,"low":37.57,"close":37.77,"volume":28244},{"time":"2025-12-14","open":38.27,"high":38.42,"low":36.87,"close":37.22,"volume":26424},{"time":"2025-12-17","open":37.5,"high":37.77,"low":35.61,"close":36.78,"volume":39446},{"time":"2025-12-20","open":37.8,"high":37.82,"low":36.24,"close":36.33,"volume":8139},{"time":"2025-12-23","open":36.16,"high":36.74,"low":34.9,"close":36.1,"volume":9756},{"time":"2025-12-26","open":36.1,"high":36.43,"low":35.8,"close":36.15,"volume":3885},{"time":"2025-12-29","open":35.95,"high":38.2,"low":35.77,"close":36.85,"volume":20691},{"time":"2026-01-01","open":37.7,"high":39.8,"low":37.7,"close":39.32,"volume":20147},{"time":"2026-01-04","open":41.58,"high":42.03,"low":38.9,"close":39.96,"volume":32055},{"time":"2026-01-07","open":40.1,"high":45.67,"low":40.07,"close":45.46,"volume":86037},{"time":"2026-01-10","open":44.15,"high":45.39,"low":43.83,"close":44,"volume":20830},{"time":"2026-01-13","open":45.77,"high":50.32,"low":45.16,"close":48.25,"volume":109126},{"time":"2026-01-16","open":49.2,"high":50.14,"low":46.66,"close":46.89,"volume":28397},{"time":"2026-01-19","open":47.21,"high":54.35,"low":46.95,"close":54.2,"volume":99544},{"time":"2026-01-22","open":54.19,"high":54.54,"low":44.4,"close":45.01,"volume":60460},{"time":"2026-01-25","open":44.18,"high":44.48,"low":42.22,"close":43.89,"volume":35464},{"time":"2026-01-28","open":46.55,"high":49.52,"low":45.9,"close":46.41,"volume":114395},{"time":"2026-01-31","open":45.57,"high":49.78,"low":45.46,"close":48.75,"volume":29682},{"time":"2026-02-03","open":49.95,"high":51.43,"low":46.73,"close":48.19,"volume":177541},{"time":"2026-02-06","open":49.01,"high":51.25,"low":48.77,"close":50.52,"volume":33975},{"time":"2026-02-09","open":49.52,"high":51.16,"low":46.71,"close":48.17,"volume":86357},{"time":"2026-02-12","open":47.7,"high":48.89,"low":44.91,"close":46.73,"volume":93163},{"time":"2026-02-15","open":45.76,"high":46.77,"low":45.4,"close":46.15,"volume":35887},{"time":"2026-02-18","open":45.85,"high":46.71,"low":42.83,"close":44.07,"volume":74695},{"time":"2026-02-21","open":43.96,"high":44.49,"low":43.13,"close":43.59,"volume":18699},{"time":"2026-02-24","open":43.95,"high":46.91,"low":43.49,"close":45.42,"volume":69034},{"time":"2026-02-27","open":44.36,"high":46.5,"low":44.28,"close":45.53,"volume":19883},{"time":"2026-03-02","open":44.1,"high":46.07,"low":42.09,"close":45.5,"volume":96060},{"time":"2026-03-05","open":44.74,"high":46.42,"low":43.23,"close":43.37,"volume":79218},{"time":"2026-03-08","open":42.59,"high":47.82,"low":41.59,"close":46.73,"volume":68176},{"time":"2026-03-11","open":46.77,"high":48.78,"low":45.12,"close":45.73,"volume":90090},{"time":"2026-03-14","open":47.83,"high":49.11,"low":45.64,"close":45.69,"volume":29078},{"time":"2026-03-17","open":45.78,"high":46.38,"low":43.6,"close":46.16,"volume":62211},{"time":"2026-03-20","open":46.81,"high":47.49,"low":43.59,"close":43.85,"volume":26600},{"time":"2026-03-23","open":44.4,"high":47.79,"low":43.16,"close":47.14,"volume":81021},{"time":"2026-03-26","open":46.12,"high":46.54,"low":42.81,"close":43.08,"volume":43408},{"time":"2026-03-29","open":43.62,"high":44.17,"low":40.58,"close":44.1,"volume":58007},{"time":"2026-04-01","open":44.86,"high":50.43,"low":44.86,"close":50.3,"volume":76500},{"time":"2026-04-04","open":50.8,"high":52.33,"low":49.82,"close":50.71,"volume":34942},{"time":"2026-04-07","open":51.58,"high":62.01,"low":51.16,"close":61.63,"volume":127279},{"time":"2026-04-10","open":61.45,"high":63.33,"low":60.7,"close":62.31,"volume":32989},{"time":"2026-04-13","open":62.16,"high":65.78,"low":62.03,"close":64.88,"volume":92310},{"time":"2026-04-16","open":64.83,"high":70.27,"low":64.23,"close":68.44,"volume":67423},{"time":"2026-04-19","open":68.35,"high":69.14,"low":65.04,"close":66.24,"volume":85314},{"time":"2026-04-22","open":67.81,"high":85.15,"low":64.93,"close":82.49,"volume":160294},{"time":"2026-04-25","open":83.45,"high":87.03,"low":82.56,"close":84.94,"volume":68677},{"time":"2026-04-28","open":81.22,"high":95.47,"low":80.74,"close":94.43,"volume":216623},{"time":"2026-05-01","open":93.09,"high":100.39,"low":92.57,"close":99.61,"volume":66845},{"time":"2026-05-04","open":99.13,"high":113.43,"low":95.55,"close":112.95,"volume":226470},{"time":"2026-05-07","open":111,"high":130.5,"low":109.09,"close":124.86,"volume":188412},{"time":"2026-05-10","open":130.87,"high":132.68,"low":114.94,"close":120.54,"volume":178526},{"time":"2026-05-13","open":124.02,"high":124.94,"low":106.71,"close":108.63,"volume":254461},{"time":"2026-05-16","open":113.38,"high":115.45,"low":103.81,"close":108.01,"volume":128537},{"time":"2026-05-19","open":106.8,"high":121.87,"low":102.35,"close":118.43,"volume":309053},{"time":"2026-05-22","open":120.18,"high":122.71,"low":118.04,"close":119.76,"volume":77323},{"time":"2026-05-25","open":121.97,"high":125.54,"low":117.01,"close":121.75,"volume":164951},{"time":"2026-05-28","open":121.27,"high":126.55,"low":113.52,"close":114.58,"volume":145095},{"time":"2026-05-31","open":109.36,"high":113.23,"low":104.12,"close":107.81,"volume":168987},{"time":"2026-06-03","open":116.28,"high":118.22,"low":98.28,"close":98.76,"volume":284657},{"time":"2026-06-06","open":110.96,"high":112.48,"low":106.6,"close":110.12,"volume":102559},{"time":"2026-06-09","open":112.66,"high":119.36,"low":99.4,"close":116.95,"volume":450247},{"time":"2026-06-12","open":117.38,"high":127.54,"low":115.27,"close":124.47,"volume":134137},{"time":"2026-06-15","open":129.42,"high":132.55,"low":116.85,"close":121.06,"volume":306412},{"time":"2026-06-18","open":131.75,"high":135.41,"low":127.85,"close":133.81,"volume":121932},{"time":"2026-06-21","open":139.05,"high":141.38,"low":128.3,"close":132.17,"volume":233155},{"time":"2026-06-24","open":132.84,"high":140.64,"low":125.37,"close":127.69,"volume":370631},{"time":"2026-06-27","open":126.89,"high":131.85,"low":118.45,"close":131.64,"volume":98290},{"time":"2026-06-30","open":131.8,"high":142.28,"low":117.58,"close":120.26,"volume":331547},{"time":"2026-07-06","open":122.5,"high":127.25,"low":104.36,"close":110.23,"volume":343717},{"time":"2026-07-09","open":114.8,"high":116.55,"low":107.37,"close":109.76,"volume":159761},{"time":"2026-07-12","open":105.62,"high":109.12,"low":101.74,"close":107.71,"volume":189466},{"time":"2026-07-15","open":109.25,"high":109.42,"low":89.55,"close":94.99,"volume":308949},{"time":"2026-07-18","open":97.43,"high":100.92,"low":96.86,"close":97.03,"volume":97180},{"time":"2026-07-21","open":103.05,"high":106.78,"low":99.17,"close":100.03,"volume":243862},{"time":"2026-07-24","open":100.35,"high":101.65,"low":91.53,"close":92.29,"volume":138923}];
+
+    const CHART = {
+      layoutBgTop: '#181b22',
+      layoutBgBottom: '#000000',
+      textColor: 'rgba(255, 255, 255, 0.7)',
+      gridVert: 'rgba(255, 255, 255, 0.02)',
+      gridHorz: 'rgba(255, 255, 255, 0.03)',
+      scaleBorder: 'rgba(255, 255, 255, 0.08)',
+      upColor: '#00c853',
+      downColor: '#ff1744',
+      volUp: 'rgba(0, 200, 83, 0.35)',
+      volDown: 'rgba(255, 23, 68, 0.35)',
+    };
+
+    const fmt = (n, d=5) => (n == null || isNaN(n)) ? '—' : Number(n).toFixed(d);
+    const fmtVol = (n) => (n == null || isNaN(n)) ? '—' : Number(n).toLocaleString(undefined, {maximumFractionDigits: 0});
+
+    function initChart(containerId, height, opts) {
+      const el = document.getElementById(containerId);
+      const chart = LightweightCharts.createChart(el, {
+        width: el.clientWidth,
+        height,
+        layout: {
+          background: {
+            type: LightweightCharts.ColorType.VerticalGradient,
+            topColor: CHART.layoutBgTop,
+            bottomColor: CHART.layoutBgBottom,
+          },
+          textColor: CHART.textColor,
+          fontFamily: "'Clash Display', -apple-system, sans-serif",
+          attributionLogo: false,
+        },
+        grid: { vertLines: { color: CHART.gridVert }, horzLines: { color: CHART.gridHorz } },
+        rightPriceScale: { borderColor: CHART.scaleBorder, textColor: CHART.textColor },
+        leftPriceScale: { textColor: CHART.textColor },
+        timeScale: { borderColor: CHART.scaleBorder, timeVisible: true, secondsVisible: false, textColor: CHART.textColor },
+        crosshair: { mode: LightweightCharts.CrosshairMode.Normal, vertLine: { color: 'rgba(255,255,255,0.25)' }, horzLine: { color: 'rgba(255,255,255,0.25)' } },
+        ...opts,
+      });
+      const ro = new ResizeObserver(() => chart.applyOptions({ width: el.clientWidth }));
+      ro.observe(el);
+      return chart;
+    }
+
+    const mainChart = initChart('chart', 420);
+    const candles = mainChart.addCandlestickSeries({
+      upColor: CHART.upColor,
+      downColor: CHART.downColor,
+      borderUpColor: CHART.upColor,
+      borderDownColor: CHART.downColor,
+      wickUpColor: CHART.upColor,
+      wickDownColor: CHART.downColor,
+    });
+    candles.setData(BARS.map(b => ({
+      time: b.time, open: b.open, high: b.high, low: b.low, close: b.close,
+    })));
+
+    const volChart = initChart('volume-chart', 100, {
+      timeScale: { visible: false, textColor: CHART.textColor },
+      rightPriceScale: { scaleMargins: { top: 0.1, bottom: 0 }, textColor: CHART.textColor },
+    });
+    const volume = volChart.addHistogramSeries({
+      priceFormat: { type: 'volume' },
+      priceScaleId: 'right',
+    });
+    volume.setData(BARS.map(b => ({
+      time: b.time,
+      value: b.volume,
+      color: b.close >= b.open ? CHART.volUp : CHART.volDown,
+    })));
+
+    mainChart.timeScale().subscribeVisibleLogicalRangeChange(range => {
+      if (range) volChart.timeScale().setVisibleLogicalRange(range);
+    });
+    volChart.timeScale().subscribeVisibleLogicalRangeChange(range => {
+      if (range) mainChart.timeScale().setVisibleLogicalRange(range);
+    });
+
+    function formatBarTime(time) {
+      if (typeof time === 'number') {
+        return new Date(time * 1000).toISOString().slice(0, 16).replace('T', ' ');
+      }
+      if (typeof time === 'string') {
+        if (time.includes('T')) return time.slice(0, 16).replace('T', ' ');
+        return `${time} 00:00`;
+      }
+      return '—';
+    }
+
+    function setHover(bar) {
+      const o = document.getElementById('hO');
+      const h = document.getElementById('hH');
+      const l = document.getElementById('hL');
+      const c = document.getElementById('hC');
+      const v = document.getElementById('hV');
+      const t = document.getElementById('hT');
+      const data = bar || (BARS.length ? BARS[BARS.length - 1] : null);
+      if (!data) {
+        [o, h, l, c, v, t].forEach(el => el.textContent = '—');
+        c.className = '';
+        return;
+      }
+      const raw = BARS.find(b => b.time === data.time) || data;
+      o.textContent = fmt(data.open);
+      h.textContent = fmt(data.high);
+      l.textContent = fmt(data.low);
+      c.textContent = fmt(data.close);
+      c.className = data.close >= data.open ? 'up' : 'down';
+      v.textContent = fmtVol(raw.volume);
+      t.textContent = formatBarTime(data.time);
+    }
+
+    mainChart.subscribeCrosshairMove(param => {
+      if (!param.time) {
+        setHover(null);
+        return;
+      }
+      const bar = param.seriesData.get(candles);
+      setHover(bar || null);
+    });
+
+    setHover(null);
+    mainChart.timeScale().fitContent();
+    volChart.timeScale().fitContent();
+  </script>
+</body>
+</html>
